@@ -1,0 +1,38 @@
+{% extends 'OpcacheBundle::base.html.twig' %}
+
+{% block content %}
+    <div class="ui four statistics">
+        <div class="statistic">
+            <div class="value">
+                {{ view.hits }}
+            </div>
+            <div class="label">
+                Hits
+            </div>
+        </div>
+        <div class="statistic">
+            <div class="value">
+                {{ view.misses }}
+            </div>
+            <div class="label">
+                Misses
+            </div>
+        </div>
+        <div class="statistic">
+            <div class="value">
+                {{ view.hitRate }}
+            </div>
+            <div class="label">
+                Hit Rate
+            </div>
+        </div>
+        <div class="statistic">
+            <div class="value">
+                {{ view.free }}
+            </div>
+            <div class="label">
+                Free (mb)
+            </div>
+        </div>
+    </div>
+{% endblock %}
